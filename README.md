@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Overview
+
+- This project is a responsive web application built with Next.js and TypeScript, showcasing a user information entry system and displaying data fetched from a public GraphQL API. It utilizes Chakra UI for its component library to ensure a visually appealing and responsive design. The application features a blocking element that captures user details, displays paginated data from a GraphQL API, and supports direct linking to specific pages of data. User interactions with the data list open detailed views in modals. This document outlines the setup and operational aspects of the project.
+
+## Key Features
+
+- User Information Entry: A blocking element (modal/page) captures a username and job title before allowing access to the rest of the application. This information is persistently stored and can be viewed and edited post-submission.
+- Data Display: Utilizes Apollo Client to fetch and display data from a public GraphQL API, specifically focusing on datasets that include images.
+- Pagination: Implements a paginated view of the GraphQL data on an "Information Page," enabling direct URL access to specific pages.
+- Detail Viewing: Clicking an item in the data list opens a modal displaying detailed information about the item.
+- Responsive Design: Ensures a seamless user experience across mobile and desktop devices using Chakra UI.
 
 ## Getting Started
 
