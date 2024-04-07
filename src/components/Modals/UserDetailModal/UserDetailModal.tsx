@@ -131,8 +131,7 @@ const UserDetailModal = ({ isOpen = false }) => {
                 />
               </Box>
             </VStack>
-            {/* Divider (optional, for visual separation if desired) */}
-            <StackDivider orientation="vertical" borderColor="gray.200" />
+
             {/* Right Section */}
             {renderPreviewUi()}
           </Flex>
