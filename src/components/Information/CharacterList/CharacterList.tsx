@@ -19,6 +19,7 @@ import {
   Text,
   Button,
   ButtonGroup,
+  Spinner,
 } from "@chakra-ui/react";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -45,6 +46,12 @@ const CharactersList: React.FC<CharactersListProps> = () => {
   });
 
   if (error) return <p>Error: {error.message}</p>;
+  if (loading)
+    return (
+      <Flex height="100vh" alignItems="center" justifyContent="center">
+        <Spinner size="xl" />
+      </Flex>
+    );
 
   const openCharacterInformationDetails = (characterId: any) => {
     const ev = new CustomEvent("InformationDetailModal", {
